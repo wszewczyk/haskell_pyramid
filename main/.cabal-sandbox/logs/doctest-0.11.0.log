@@ -1,0 +1,29 @@
+Configuring doctest-0.11.0...
+Building doctest-0.11.0...
+Preprocessing library doctest-0.11.0...
+[ 1 of 16] Compiling Sandbox          ( src/Sandbox.hs, dist/dist-sandbox-56ff2437/build/Sandbox.o )
+[ 2 of 16] Compiling Paths_doctest    ( dist/dist-sandbox-56ff2437/build/autogen/Paths_doctest.hs, dist/dist-sandbox-56ff2437/build/Paths_doctest.o )
+[ 3 of 16] Compiling Language.Haskell.GhciWrapper ( ghci-wrapper/src/Language/Haskell/GhciWrapper.hs, dist/dist-sandbox-56ff2437/build/Language/Haskell/GhciWrapper.o )
+[ 4 of 16] Compiling Interpreter      ( src/Interpreter.hs, dist/dist-sandbox-56ff2437/build/Interpreter.o )
+[ 5 of 16] Compiling Help             ( src/Help.hs, dist/dist-sandbox-56ff2437/build/Help.o )
+[ 6 of 16] Compiling PackageDBs       ( src/PackageDBs.hs, dist/dist-sandbox-56ff2437/build/PackageDBs.o )
+[ 7 of 16] Compiling Util             ( src/Util.hs, dist/dist-sandbox-56ff2437/build/Util.o )
+[ 8 of 16] Compiling Location         ( src/Location.hs, dist/dist-sandbox-56ff2437/build/Location.o )
+[ 9 of 16] Compiling GhcUtil          ( src/GhcUtil.hs, dist/dist-sandbox-56ff2437/build/GhcUtil.o )
+[10 of 16] Compiling Extract          ( src/Extract.hs, dist/dist-sandbox-56ff2437/build/Extract.o )
+[11 of 16] Compiling Parse            ( src/Parse.hs, dist/dist-sandbox-56ff2437/build/Parse.o )
+[12 of 16] Compiling Property         ( src/Property.hs, dist/dist-sandbox-56ff2437/build/Property.o )
+[13 of 16] Compiling Runner.Example   ( src/Runner/Example.hs, dist/dist-sandbox-56ff2437/build/Runner/Example.o )
+[14 of 16] Compiling Runner           ( src/Runner.hs, dist/dist-sandbox-56ff2437/build/Runner.o )
+[15 of 16] Compiling Run              ( src/Run.hs, dist/dist-sandbox-56ff2437/build/Run.o )
+[16 of 16] Compiling Test.DocTest     ( src/Test/DocTest.hs, dist/dist-sandbox-56ff2437/build/Test/DocTest.o )
+In-place registering doctest-0.11.0...
+Preprocessing executable 'doctest' for doctest-0.11.0...
+[1 of 1] Compiling Main             ( driver/Main.hs, dist/dist-sandbox-56ff2437/build/doctest/doctest-tmp/Main.o )
+Linking dist/dist-sandbox-56ff2437/build/doctest/doctest ...
+Creating package registration file:
+/tmp/pkgConf-doctest-0.1110252023621350490027.0
+Installing library in
+/home/wlodi/spop/main/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/doctest-0.11.0-8onqlrcIvx7I8cCoo1ZPfl
+Installing executable(s) in /home/wlodi/spop/main/.cabal-sandbox/bin
+Registering doctest-0.11.0...

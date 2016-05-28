@@ -16,11 +16,11 @@ version :: Version
 version = Version [0,0,1] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/wlodi/.cabal/bin"
-libdir     = "/home/wlodi/.cabal/lib/x86_64-linux-ghc-7.10.3/main-0.0.1-E2UncjTcaNt5nGMzk1Xukn"
-datadir    = "/home/wlodi/.cabal/share/x86_64-linux-ghc-7.10.3/main-0.0.1"
-libexecdir = "/home/wlodi/.cabal/libexec"
-sysconfdir = "/home/wlodi/.cabal/etc"
+bindir     = "/home/wlodi/spop/main/.cabal-sandbox/bin"
+libdir     = "/home/wlodi/spop/main/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/main-0.0.1-0IIIDl4F5Jt9lo1yhExK7Q"
+datadir    = "/home/wlodi/spop/main/.cabal-sandbox/share/x86_64-linux-ghc-7.10.3/main-0.0.1"
+libexecdir = "/home/wlodi/spop/main/.cabal-sandbox/libexec"
+sysconfdir = "/home/wlodi/spop/main/.cabal-sandbox/etc"
 
 getBinDir, getLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "main_bindir") (\_ -> return bindir)

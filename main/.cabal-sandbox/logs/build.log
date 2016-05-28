@@ -1,0 +1,12 @@
+
+package: doctest-0.11.0
+os: linux
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.6.0
+dependencies: transformers-0.4.2.0 syb-0.6 process-1.2.3.0
+              ghc-paths-0.1.0.9 ghc-7.10.3 filepath-1.4.0.0 directory-1.2.2.0
+              deepseq-1.4.1.1 base-compat-0.9.1 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
