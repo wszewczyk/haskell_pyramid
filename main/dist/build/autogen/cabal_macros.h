@@ -28,6 +28,20 @@
   (major1) == 0 && (major2) <  11 || \
   (major1) == 0 && (major2) == 11 && (minor) <= 0)
 
+/* package matrix-0.3.4.4 */
+#define VERSION_matrix "0.3.4.4"
+#define MIN_VERSION_matrix(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 4)
+
+/* package vector-0.11.0.0 */
+#define VERSION_vector "0.11.0.0"
+#define MIN_VERSION_vector(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  11 || \
+  (major1) == 0 && (major2) == 11 && (minor) <= 0)
+
 /* tool alex-3.1.6 */
 #define TOOL_VERSION_alex "3.1.6"
 #define MIN_TOOL_VERSION_alex(major1,major2,minor) (\
@@ -112,5 +126,5 @@
   (major1) == 2 && (major2) <  26 || \
   (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "main_0IIIDl4F5Jt9lo1yhExK7Q"
+#define CURRENT_PACKAGE_KEY "main_0MbeJdh12yM5HU0NspmFjt"
 

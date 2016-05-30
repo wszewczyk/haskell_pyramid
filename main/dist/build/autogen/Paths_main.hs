@@ -17,7 +17,7 @@ version = Version [0,0,1] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/wlodi/spop/main/.cabal-sandbox/bin"
-libdir     = "/home/wlodi/spop/main/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/main-0.0.1-0IIIDl4F5Jt9lo1yhExK7Q"
+libdir     = "/home/wlodi/spop/main/.cabal-sandbox/lib/x86_64-linux-ghc-7.10.3/main-0.0.1-0MbeJdh12yM5HU0NspmFjt"
 datadir    = "/home/wlodi/spop/main/.cabal-sandbox/share/x86_64-linux-ghc-7.10.3/main-0.0.1"
 libexecdir = "/home/wlodi/spop/main/.cabal-sandbox/libexec"
 sysconfdir = "/home/wlodi/spop/main/.cabal-sandbox/etc"
