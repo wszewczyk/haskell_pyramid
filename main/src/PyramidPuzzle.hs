@@ -33,7 +33,7 @@ data BoardManager = BoardManager Int Board Position
 findSolution :: Pyramids -> Maybe [[Int]]
 findSolution (Pyramids [] [] [] []) = Just []
 findSolution (Pyramids above below left right) =
-  listToMaybe (fmap retMatrix (lookForSolution range done reject apply manager))
+  listToMaybe (fmap retMatrix (lookForSolution range done reject _preprocess manager))
   where
     step (r, c) = let (dc, rc) =  quotRem (c+1) (size+1) in (r + dc,dc + rc)
     done (BoardManager n _ (r, c)) = (r, c) == (n, n)
@@ -56,7 +56,7 @@ findSolution (Pyramids above below left right) =
             nrow = nextRow manager --row of a next cell (where will be inserted value)
             ncol = nextCol manager --column of a next cell (where will be inserted value)
             isCorrect e r = not (isGood e r)
-    apply p@(BoardManager n board pos) value = BoardManager n (addToBoard p value) (step pos)
+    _preprocess p@(BoardManager n board pos) value = BoardManager n (addToBoard p value) (step pos)
 
     manager = BoardManager size (emptyBoard size) (1, 0)
     range  = [1..size]
@@ -64,13 +64,13 @@ findSolution (Pyramids above below left right) =
 
 lookForSolution :: [b] -> (a -> Bool) -> (a -> b -> Bool) ->
                (a -> b -> a) -> a -> [a]
-lookForSolution range done reject apply manager = do
+lookForSolution range done reject _preprocess manager = do
   val <- range
   when (reject manager val) []
-  let _manager = apply manager val
+  let _manager = _preprocess manager val
   if done _manager
     then return _manager
-    else lookForSolution range done reject apply _manager
+    else lookForSolution range done reject _preprocess _manager
 
 currentRow :: BoardManager -> [Int]
 currentRow (BoardManager _ m (r, _)) = Data.Vector.toList (Data.Matrix.getRow r m)
@@ -103,5 +103,4 @@ numOfVisible line = _numOfVisible 0 0 line
                                        else _numOfVisible max i xs
 retMatrix :: BoardManager -> [[Int]]
 retMatrix (BoardManager size b _) = Data.Matrix.toLists b  --solution as array of arrays
-
 
